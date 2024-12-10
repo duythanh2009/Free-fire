@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <permissions>
+        <library name="sensitivity_x" fileFormat="xml"/>
+        <config display="LCD" value="4080" refresh_rate="60"/>
+        <property delay="1"/>
+    </permissions>
+
+    <Regedit>
+        <feature name="INCREASE SENSITIVITY" value="high" />
+        <feature name="AIMBOT" value="enabled" />
+        <feature name="AIMLOCK" value="enabled" />
+        <feature name="AIMFOV" value="90" />
+        <feature name="SUPER HEAD TRACKING" value="enabled" />
+        <feature name="LIGHT AIM" value="enabled" />
+        <feature name="120HZ" value="enabled" />
+        <feature name="SMOOTH AIM" value="enabled" />
+        <feature name="SENSITIVITY" value="100" />
+        <feature name="HEADLOCK" value="enabled" />
+        <feature name="PERFORMANCE BOOST" value="optimized" />
+        <feature name="SMOOTH GAMEPLAY" value="high" />
+        <feature name="FIX LAG" value="enabled" />
+        <feature name="HEADSHOT ALIGNMENT FIX" value="enabled" />
+        <feature name="STRAIGHT BULLET 10%" value="enabled" />
+        <feature name="ANTI-BAN 100%" value="enabled" />
+        <feature name="NON-HACK MATCHING 100%" value="enabled" />
+    </Regedit>
+
+    <!-- Settings Map Configuration -->
+    <settingsMap>
+        <map sectionType="System.Web.Configuration.MembershipSection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+             mapperType="Mono.Web.Util.MembershipSectionMapper, Mono.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756"
+             platform="Unix">
+            <what value="providers">
+                <replace name="AspNetSqlMembershipProvider" 
+                         type="System.Web.Security.SqliteMembershipProvider, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 
+                         connectionStringName="LocalSqliteServer" />
+            </what>
+        </map>
+
+        <map sectionType="System.Web.Configuration.RoleManagerSection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+             mapperType="Mono.Web.Util.RoleManagerSectionMapper, Mono.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756"
+             platform="Unix">
+            <what value="providers">
+                <replace name="AspNetSqlRoleProvider" 
+                         type="System.Web.Security.SqliteRoleProvider, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 
+                         connectionStringName="LocalSqliteServer" />
+            </what>
+        </map>
+    </settingsMap>
+
+    <!-- Configuration for specific paths -->
+    <pathConfigurations>
+        <path name="Com.Dts.FreeFireTh" value="working" />
+        <path name="Android/data/com.dts.freefireth/files" />
+        <path name="Android/data/com.dts.freefiremax/files" />
+    </pathConfigurations>
+</configuration>
